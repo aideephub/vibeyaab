@@ -1440,3 +1440,13 @@ button:disabled {
     scroll-behavior: auto !important;
   }
 }
+/* 
+ * Fix: Override scroll-locking styles injected by third-party 
+ * scripts (e.g., Google Programmable Search Element).
+ */
+html,
+body {
+  overflow: auto !important;
+  height: auto !important;
+  position: static !important;
+}
