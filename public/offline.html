@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4f46e5" />
+    <title>VibeYaab — Offline / آفلاین</title>
+    <style>
+      :root { color-scheme: light dark; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Tahoma, "Noto Sans Arabic", sans-serif;
+        background: #f7f7f8;
+        color: #16181d;
+        line-height: 1.6;
+      }
+      main {
+        max-width: 28rem;
+        padding: 28px;
+        border: 1px solid #d9dbe1;
+        border-radius: 16px;
+        background: #ffffff;
+      }
+      h1 { margin: 0 0 8px; font-size: 1.5rem; }
+      h2 { margin: 0 0 6px; font-size: 1.125rem; }
+      p { margin: 0 0 12px; }
+      hr { border: 0; border-top: 1px solid #d9dbe1; margin: 20px 0; }
+      a { color: #4338ca; font-weight: 600; }
+      @media (prefers-color-scheme: dark) {
+        body { background: #0e1014; color: #eceef3; }
+        main { background: #161920; border-color: #2a2e38; }
+        hr { border-top-color: #2a2e38; }
+        a { color: #a5b4fc; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 dir="ltr">VibeYaab</h1>
+      <section lang="en" dir="ltr">
+        <h2>You’re offline</h2>
+        <p>
+          Live search needs an internet connection. Your saved bookmarks and settings are stored in this
+          browser and are available again once the app is loaded.
+        </p>
+        <p><a href="./">Try again</a></p>
+      </section>
+      <hr />
+      <section lang="fa" dir="rtl">
+        <h2>اتصال اینترنت ندارید</h2>
+        <p>
+          جستجوی زنده به اینترنت نیاز دارد. نشان‌ها و تنظیمات شما فقط در همین مرورگر ذخیره شده‌اند و پس از
+          بارگذاری برنامه در دسترس خواهند بود.
+        </p>
+        <p><a href="./">تلاش دوباره</a></p>
+      </section>
+    </main>
+  </body>
+</html>

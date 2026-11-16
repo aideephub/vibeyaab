@@ -1,0 +1,25 @@
+{
+  "name": "VibeYaab",
+  "short_name": "VibeYaab",
+  "description": "Find before you build. Search AI-built projects, open-source alternatives and GitHub repositories. / قبل از ساختن، پیدا کن.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f7f7f8",
+  "theme_color": "#4f46e5",
+  "lang": "en",
+  "dir": "auto",
+  "categories": ["developer tools", "productivity", "utilities"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "shortcuts": [
+    { "name": "Bookmarks", "url": "./#/bookmarks" },
+    { "name": "Settings", "url": "./#/settings" }
+  ]
+}

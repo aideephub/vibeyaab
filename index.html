@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>VibeYaab — Find before you build</title>
+    <meta
+      name="description"
+      content="VibeYaab searches curated AI-built project directories, GitHub and open-source alternatives. Find before you build. / قبل از ساختن، پیدا کن."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="icons/icon.svg" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <script>
+      // Apply saved language and theme before first paint to avoid a flash.
+      try {
+        var s = JSON.parse(localStorage.getItem('vibeyaab:settings') || 'null') || {};
+        var lang = s.lang === 'fa' || s.lang === 'en' ? s.lang : (navigator.language || '').toLowerCase().indexOf('fa') === 0 ? 'fa' : 'en';
+        document.documentElement.lang = lang;
+        document.documentElement.dir = lang === 'fa' ? 'rtl' : 'ltr';
+        if (s.theme === 'light' || s.theme === 'dark') document.documentElement.setAttribute('data-theme', s.theme);
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>VibeYaab needs JavaScript to run. / ویب‌یاب برای اجرا به جاوااسکریپت نیاز دارد.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
